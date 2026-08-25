@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>মোঃ আলিফ শেখ ও লামিয়া আক্তার | বিবাহ নিমন্ত্রণ</title>
+  
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&family=Noto+Serif+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-gold: #d4af37;
+      --soft-gold: #f3e5ab;
+      --deep-maroon: #4a0e17;
+      --bg-color: #fdfbf7;
+      --text-color: #333333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Serif Bengali', serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* Main Container */
+    #mainContent {
+      display: block;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 40px 20px 30px;
+      background: linear-gradient(rgba(74, 14, 23, 0.03), rgba(74, 14, 23, 0.08));
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--deep-maroon);
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    /* Couple Photo Container */
+    .couple-photos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .photo-frame {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid var(--primary-gold);
+      padding: 5px;
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .heart-icon {
+      font-size: 1.8rem;
+      color: var(--deep-maroon);
+    }
+
+    .names {
+      font-size: 2.5rem;
+      color: var(--deep-maroon);
+      margin: 10px 0;
+      font-weight: 700;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .names span {
+      font-size: 2rem;
+      color: var(--primary-gold);
+    }
+
+    .event-date {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary-gold);
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    /* Countdown Section */
+    .countdown-container {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(70px, 90px));
+      justify-content: center;
+      gap: 12px;
+      margin: 20px auto;
+      max-width: 420px;
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    .time-box {
+      background: #ffffff;
+      border: 1.5px solid var(--soft-gold);
+      padding: 12px 8px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .time-box span {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: var(--deep-maroon);
+    }
+
+    .time-box label {
+      font-size: 0.85rem;
+      color: #666;
+      font-weight: 600;
+    }
+
+    /* Card Section */
+    .card-section {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 35px 20px;
+      background: #ffffff;
+      border: 2px solid var(--primary-gold);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      width: 90%;
+    }
+
+    .card-title {
+      font-size: 1.8rem;
+      color: var(--deep-maroon);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .card-intro {
+      font-size: 1.05rem;
+      margin-bottom: 25px;
+      color: #555;
+    }
+
+    /* Groom and Bride Side Details */
+    .details-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    .person-card {
+      background: #fdfbf7;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid var(--soft-gold);
+    }
+
+    .person-card h3 {
+      color: var(--deep-maroon);
+      font-size: 1.2rem;
+      border-bottom: 2px solid var(--primary-gold);
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .person-card p {
+      font-size: 0.95rem;
+      margin: 5px 0;
+    }
+
+    /* Event Time & Venue */
+    .event-info {
+      border-top: 1px dashed var(--primary-gold);
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .details-item {
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+
+    .details-item i {
+      color: var(--primary-gold);
+      margin-right: 8px;
+    }
+
+    /* Wish Form Section */
+    .wish-section {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      width: 90%;
+    }
+
+    .wish-section h3 {
+      font-size: 1.4rem;
+      color: var(--deep-maroon);
+      margin-bottom: 15px;
+    }
+
+    .wish-form input, .wish-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    .wish-form button, .home-btn {
+      background: var(--deep-maroon);
+      color: #ffffff;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1.05rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 600;
+      margin-top: 15px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .wish-form button:hover, .home-btn:hover {
+      background: var(--primary-gold);
+      color: var(--text-color);
+    }
+
+    /* Dedicated Thank You Screen */
+    #thankYouScreen {
+      display: none;
+      min-height: 80vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+
+    .thank-you-card {
+      background: #ffffff;
+      border: 2px solid var(--primary-gold);
+      border-radius: 20px;
+      padding: 40px 25px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: zoomIn 0.4s ease-out;
+    }
+
+    .thank-you-card i.icon-check {
+      font-size: 4rem;
+      color: #27ae60;
+      margin-bottom: 20px;
+    }
+
+    .thank-you-card h2 {
+      color: var(--deep-maroon);
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .thank-you-card p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 25px;
+      line-height: 1.7;
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* Responsive for Small Screens */
+    @media (max-width: 600px) {
+      .details-grid {
+        grid-template-columns: 1fr;
+      }
+      .names {
+        font-size: 2.2rem;
+      }
+      .photo-frame {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full Page Content -->
+  <div id="mainContent">
+    <!-- Hero Section -->
+    <section class="hero">
+      <p class="subtitle">বিসমিল্লাহির রহমানির রহিম</p>
+      
+      <!-- Couple Photos Header -->
+      <div class="couple-photos">
+        <div class="photo-frame">
+          <!-- বরের ছবি পরিবর্তন করতে src বদলে দিন -->
+          <img src="bor.jpeg" alt="মোঃ আলিফ শেখ">
+        </div>
+        <i class="fa-solid fa-heart heart-icon"></i>
+        <div class="photo-frame">
+          <!-- কনের ছবি পরিবর্তন করতে src বদলে দিন -->
+          <img src="lamu.jpeg" alt="লামিয়া আক্তার">
+        </div>
+      </div>
+
+      <h1 class="names">মোঃ আলিফ শেখ <span>ও</span> লামিয়া আক্তার</h1>
+      <p class="event-date">০২ অক্টোবর, ২০২৬</p>
+
+      <!-- Countdown Timer -->
+      <div class="countdown-container">
+        <div class="time-box"><span id="days">০০</span><label>দিন</label></div>
+        <div class="time-box"><span id="hours">০০</span><label>ঘণ্টা</label></div>
+        <div class="time-box"><span id="minutes">০০</span><label>মিঃ</label></div>
+        <div class="time-box"><span id="seconds">০০</span><label>সেঃ</label></div>
+      </div>
+    </section>
+
+    <!-- Digital Card Section -->
+    <section class="card-section">
+      <h2 class="card-title">শুভ বিবাহ</h2>
+      <p class="card-intro">সবিনয় নিবেদন, আমাদের বিবাহের এই শুভক্ষণে আপনার উপস্থিতি এবং দোয়া একান্তভাবে কামনা করছি।</p>
+      
+      <!-- Groom and Bride Details Side-by-Side -->
+      <div class="details-grid">
+        <div class="person-card">
+          <h3>বরের পরিচয়</h3>
+          <p><strong>বরের নাম:</strong> মোঃ আলিফ শেখ</p>
+          <p><strong>পিতা:</strong> মোঃ সেলিম রেজা</p>
+          <p><strong>মাতা:</strong> মোসাঃ নাসিমা বেগম</p>
+          <p><strong>ঠিকানা:</strong> দেওয়ানবাগ, মদনপুর</p>
+        </div>
+
+        <div class="person-card">
+          <h3>কনের পরিচয়</h3>
+          <p><strong>কনের নাম:</strong> লামিয়া আক্তার</p>
+          <p><strong>পিতা:</strong> মোঃ আমজাদ হোসেন</p>
+          <p><strong>মাতা:</strong> মোসাঃ রাসিদা আক্তার</p>
+          <p><strong>ঠিকানা:</strong> ললাটি স্টান</p>
+        </div>
+      </div>
+
+      <!-- General Event Details -->
+      <div class="event-info">
+        <div class="details-item"><i class="fa-solid fa-calendar-days"></i> <strong>তারিখ:</strong> ০২ অক্টোবর, ২০২৬</div>
+        <div class="details-item"><i class="fa-solid fa-clock"></i> <strong>সময়:</strong> দুপুর ১২:০০ টা</div>
+        <div class="details-item"><i class="fa-solid fa-location-dot"></i> <strong>অনুষ্ঠানস্থল:</strong> ললাটি স্টান</div>
+      </div>
+    </section>
+
+    <!-- Wish Section -->
+    <section class="wish-section">
+      <h3>আপনার শুভেচ্ছা বার্তা পাঠান</h3>
+      <form class="wish-form" id="greetingsForm">
+        <input type="text" id="guestName" placeholder="আপনার নাম" required>
+        <input type="text" id="guestAddress" placeholder="আপনার ঠিকানা" required>
+        <textarea id="guestMessage" rows="4" placeholder="শুভেচ্ছা বার্তা বা দোয়া লিখুন..." required></textarea>
+        <button type="submit" id="submitBtn">শুভেচ্ছা পাঠান</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>আলিফ ও লামিয়ার বিবাহের বিশেষ স্মারক ❤</p>
+    </footer>
+  </div>
+
+  <!-- Dedicated Thank You Screen (Hidden by Default) -->
+  <div id="thankYouScreen">
+    <div class="thank-you-card">
+      <i class="fa-solid fa-circle-check icon-check"></i>
+      <h2>অসংখ্য ধন্যবাদ!</h2>
+      <p>আপনার মূল্যবান শুভেচ্ছা বার্তাটি সফলভাবে আমাদের কাছে পৌঁছে গেছে। আলিফ ও লামিয়ার নতুন জীবনের জন্য দোয়া করবেন। ❤️</p>
+      <button class="home-btn" onclick="goHome()">হোমে ফিরে যান</button>
+    </div>
+  </div>
+
+  <script>
+    const BOT_TOKEN = "8810398290:AAElwQSZ-v6c3XGLRcfUwORhX-fr2WA9r1k"; 
+    const CHAT_ID = "7062159717";
+
+    // Countdown Timer Script
+    const targetDate = new Date("October 2, 2026 12:00:00").getTime();
+
+    const toBengaliNumber = (str) => {
+      const bnDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+      return str.replace(/[0-9]/g, (w) => bnDigits[+w]);
+    };
+
+    const updateTimer = () => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        const d = String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, '0');
+        const h = String(Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+        const m = String(Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+        const s = String(Math.floor((difference % (1000 * 60)) / 1000)).padStart(2, '0');
+
+        document.getElementById("days").innerText = toBengaliNumber(d);
+        document.getElementById("hours").innerText = toBengaliNumber(h);
+        document.getElementById("minutes").innerText = toBengaliNumber(m);
+        document.getElementById("seconds").innerText = toBengaliNumber(s);
+      }
+    };
+    setInterval(updateTimer, 1000);
+    updateTimer();
+
+    // Form Submit Handler
+    const form = document.getElementById('greetingsForm');
+    const mainContent = document.getElementById('mainContent');
+    const thankYouScreen = document.getElementById('thankYouScreen');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const name = document.getElementById('guestName').value;
+      const address = document.getElementById('guestAddress').value;
+      const message = document.getElementById('guestMessage').value;
+      const submitBtn = document.getElementById('submitBtn');
+
+      submitBtn.innerText = "পাঠানো হচ্ছে...";
+      submitBtn.disabled = true;
+
+      const text = `💍 বিবাহ শুভেচ্ছা বার্তা!\n\n👤 নাম: ${name}\n📍 ঠিকানা: ${address}\n💬 বার্তা: ${message}`;
+
+      try {
+        const telegramUrl = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+        
+        await fetch(telegramUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            chat_id: CHAT_ID,
+            text: text
+          })
+        });
+
+        // Hide main page & Show Thank You Page
+        mainContent.style.display = "none";
+        thankYouScreen.style.display = "flex";
+        form.reset();
+
+      } catch (error) {
+        console.error("Error sending message:", error);
+        // Fallback: Show thank you screen anyway
+        mainContent.style.display = "none";
+        thankYouScreen.style.display = "flex";
+        form.reset();
+      } finally {
+        submitBtn.innerText = "শুভেচ্ছা পাঠান";
+        submitBtn.disabled = false;
+      }
+    });
+
+    // Go back to home function
+    function goHome() {
+      thankYouScreen.style.display = "none";
+      mainContent.style.display = "block";
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+  </html>
